@@ -23,25 +23,15 @@ Partial Class LoginForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LoginForm))
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.lblHeading = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.txtUsername = New System.Windows.Forms.TextBox()
         Me.lblPassword = New System.Windows.Forms.Label()
         Me.lblUsername = New System.Windows.Forms.Label()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.picGradiant = New System.Windows.Forms.PictureBox()
+        CType(Me.picGradiant, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.WindowsApp1.My.Resources.Resources.istockphoto_1353780638_612x612
-        Me.PictureBox1.Location = New System.Drawing.Point(-11, -3)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(813, 457)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
         '
         'lblHeading
         '
@@ -107,6 +97,16 @@ Partial Class LoginForm
         Me.lblUsername.TabIndex = 12
         Me.lblUsername.Text = "Username"
         '
+        'picGradiant
+        '
+        Me.picGradiant.Image = Global.WindowsApp1.My.Resources.Resources.istockphoto_1353780638_612x612
+        Me.picGradiant.Location = New System.Drawing.Point(-11, -3)
+        Me.picGradiant.Name = "picGradiant"
+        Me.picGradiant.Size = New System.Drawing.Size(813, 457)
+        Me.picGradiant.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picGradiant.TabIndex = 0
+        Me.picGradiant.TabStop = False
+        '
         'LoginForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -119,18 +119,18 @@ Partial Class LoginForm
         Me.Controls.Add(Me.lblPassword)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.lblHeading)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.picGradiant)
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "LoginForm"
         Me.Text = "Login"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picGradiant, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents picGradiant As PictureBox
     Friend WithEvents lblHeading As Label
     Friend WithEvents Button2 As Button
     Friend WithEvents txtPassword As TextBox

@@ -73,17 +73,23 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminPannel.Designer.vb">
-      <DependentUpon>AdminPannel.vb</DependentUpon>
+    <Compile Include="AdminPanel.Designer.vb">
+      <DependentUpon>AdminPanel.vb</DependentUpon>
     </Compile>
-    <Compile Include="AdminPannel.vb">
+    <Compile Include="AdminPanel.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="EventPage.Designer.vb">
+      <DependentUpon>EventPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EventPage.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Homepage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Homepage.Designer.vb">
+      <DependentUpon>Homepage.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.vb">
@@ -109,11 +115,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AdminPannel.resx">
-      <DependentUpon>AdminPannel.vb</DependentUpon>
+    <EmbeddedResource Include="AdminPanel.resx">
+      <DependentUpon>AdminPanel.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="EventPage.resx">
+      <DependentUpon>EventPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Homepage.resx">
+      <DependentUpon>Homepage.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
